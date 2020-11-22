@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+#mainBody {
+  background: #262921;
+}
+#pageBody {
+  width: 1340px;
+  margin: auto;
+
+  background: #262921;
+}
+p {
+  font-family: spartan;
+}
+span.heading {
+  font-family: spartan;
+  color: white;
+  font-weight: 500;
+}
+h2 {
+  color: #8eab5c;
+  font-family: spartan;
+  font-weight: 800;
+  width: 222px;
+  margin: auto;
+  padding: 120px 0px 90px 0px;
+  font-size: 40px;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+}
+.input {
+  width: 415px;
+  height: 47px;
+  border: none;
+  border-radius: 3px;
+  font-family: cousine;
+  color: #333329;
+  padding-top: 2%;
+}
+
+button.addBtn {
+  width: 76px;
+  height: 58px;
+  padding-top: 6px;
+  font-size: 28px;
+  font-family: "Luckiest Guy";
+  border: solid white 1px;
+  border-radius: 4px;
+  background: tomato;
+  color: #c9c9bd;
+}
+h3 {
+  text-align: center;
+  padding: 18px 55px 16px 0px;
+  color: white;
+  font-size: 25px;
+  font-family: "Cousine";
+}
+
+ol {
+  list-style: none;
+  counter-reset: section;
+}
+
+li {
+  width: 100%;
+  background: #614d26;
+  padding: 10px;
+  margin: 5px 0;
+  border: solid white 1px;
+  border-radius: 5px;
+  margin-left: -25px;
+  font-size: 20px;
+  font-family: arial;
+  color: white;
+  counter-increment: section;
+}
+li::before {
+  content: counter(section) ". ";
+}
+button {
+  float: right;
+}
+
+button.done {
+  background: #688226;
+  width: 60px;
+  height: 27px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.complete li {
+  background: #6e873b;
+}
+button.remove {
+  background: #660d0d;
+  width: 60px;
+  height: 27px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: monospace;
+  font-weight: bold;
+}
+footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 280px;
+  font-size: 14px;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  #mainBody {
+    width: 100%;
+  }
+  #pageBody {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  #mainBody {
+    width: 100%;
+  }
+  #pageBody {
+    width: 100%;
+    overflow: hidden;
+  }
+  .input {
+    width: 60%;
+    margin-left: 50px;
+    justify-content: center;
+  }
+  button.addBtn {
+    width: 3em;
+    position: absolute;
+  }
+  h3 {
+    width: 100%;
+  }
+  ol {
+    width: 400px;
+    justify-content: center;
+    margin-left: 55px;
+  }
+}
